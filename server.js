@@ -4,19 +4,16 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// CORS configuration (browser-safe)
-const corsOptions = {
-    origin: "https://ashokkaji-portfolio.netlify.app",
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
-    optionsSuccessStatus: 200
-};
+app.use(cors({
+    origin: [
+        "https://kaleidoscopic-fox-a3fc3a.netlify.app",
+        "https://ashokkaji-portfolio.netlify.app"
+    ],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"]
+}));
 
-app.use(cors(corsOptions));
 app.use(express.json());
-
-// Explicit preflight handling
-app.options("*", cors(corsOptions));
 
 // Health check
 app.get("/", (req, res) => {
@@ -42,7 +39,6 @@ app.post("/contact", (req, res) => {
     });
 });
 
-// Start server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
