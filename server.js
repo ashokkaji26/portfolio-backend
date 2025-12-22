@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors({
     origin: [
+        "https://ashokkaji-personal-portfolio.netlify.app",
         "https://kaleidoscopic-fox-a3fc3a.netlify.app",
         "https://ashokkaji-portfolio.netlify.app"
     ],
