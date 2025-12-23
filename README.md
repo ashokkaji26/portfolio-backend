@@ -35,7 +35,7 @@ The project focuses on clean API design, secure frontend–backend communication
 
 ### Health Check
 
-- GET / --> Response :- Backend is running
+- **GET** / --> Response :- Backend is running
 - Purpose:
  • Used to verify that the backend server is running
  • Helpful for deployment and uptime checks
@@ -45,7 +45,7 @@ The project focuses on clean API design, secure frontend–backend communication
 
 ### Contact Form Submission
 
-- POST /contact 
+- **POST /contact** 
 
 **Request Body (JSON):**
 {
