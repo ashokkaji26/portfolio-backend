@@ -9,7 +9,7 @@ app.use(cors({
         "https://ashokkaji-personal-portfolio.netlify.app",
         "https://kaleidoscopic-fox-a3fc3a.netlify.app",
         "https://ashokkaji-portfolio.netlify.app",
-        "https://ashokkaji26.github.io/personal-portfolio/"
+        "https://ashokkaji26.github."
     ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
