@@ -8,7 +8,8 @@ app.use(cors({
     origin: [
         "https://ashokkaji-personal-portfolio.netlify.app",
         "https://kaleidoscopic-fox-a3fc3a.netlify.app",
-        "https://ashokkaji-portfolio.netlify.app"
+        "https://ashokkaji-portfolio.netlify.app",
+        "https://ashokkaji26.github.io/personal-portfolio/"
     ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
